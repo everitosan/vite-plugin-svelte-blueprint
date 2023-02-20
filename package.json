@@ -1,0 +1,21 @@
+{
+  "name": "vite-plugin-svelte-blueprint",
+  "version": "2.0.0",
+  "description": "Vite plugin for svelte-blueprint",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "svelte",
+    "documentation",
+    "component",
+    "document",
+    "blueprint"
+  ],
+  "author": "everitosan",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.4.3"
+  }
+}
