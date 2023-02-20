@@ -7,7 +7,7 @@ function ViteSvelteBlueprint(opts=utils.defaultOptions) {
     ...opts
   }
 
-  const dstPath = options.dst + '/Pages'
+  const dstPath = options.destination + '/Pages'
 
   // todo initial compilation
 
@@ -17,8 +17,12 @@ function ViteSvelteBlueprint(opts=utils.defaultOptions) {
     // HMR
     handleHotUpdate({ file, server }) {      
       if (utils.validateFileChanged(file, options.source)) {
-        console.log(`Svelte file detected ${file}`)
-        document(file, dstPath, options.template),  
+        let res = blueprint.document(file, dstPath, options.template)
+        if(options.debug) {
+          console.log(`Svelte file detected ${file}`)
+          console.log(options)
+          console.log(`Documentation generated: ${res}`)
+        }
         server.ws.send({     
           type: 'update',          
           path: '*'

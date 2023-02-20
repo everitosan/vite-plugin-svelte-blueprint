@@ -40,3 +40,4 @@ The pluing accepts up to three configuration parameters.
 |  source | Source directory of components | 
 |  destination | Output directory for documentation files | 
 |  template | Svelte file that defines documentation structure | 
+|  debug | Flag to indicate if logs shouls be shown | 
