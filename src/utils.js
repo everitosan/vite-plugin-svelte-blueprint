@@ -7,7 +7,6 @@ const defaultOptions = {
   debug: false // Flag to show output in console
 }
 
-
 const validateFileChanged = (file, source) => {
   let p = Path.normalize(source)
   return file.includes(p) && file.endsWith(".svelte")

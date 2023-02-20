@@ -2,11 +2,12 @@
 
 ## Vite plugin for [svelte-blueprint](https://www.npmjs.com/package/svelte-blueprint)
 
+⚠️ Important   
+This plugin is only compatible with svelte-blueprint >= 2.0.0
 
+## How to:
 
-### How to use.
-
-> Installation
+### 📦 Install
 
 Install svelte-blueprint and vite-plugin-svelte-blueprint.
 
@@ -31,13 +32,13 @@ export default defineConfig({
 
 ```
 
-> Configuration
+### 🔧 Configure
 
-The pluing accepts up to three configuration parameters.
+The pluing accepts up to four configuration parameters.
 
-| Parameter | Description |
-| -- | -- |
-|  source | Source directory of components | 
-|  destination | Output directory for documentation files | 
-|  template | Svelte file that defines documentation structure | 
-|  debug | Flag to indicate if logs shouls be shown | 
+| Parameter | Description | Default |
+| -- | -- | -- |
+|  source | Source directory of components | src/lib |
+|  destination | Output directory for documentation files | src/Blueprint |
+|  template | Svelte file that defines documentation structure | svelte-blueprint/templates/Blueprint.svelte |
+|  debug | Flag to indicate if logs shouls be shown | false |
