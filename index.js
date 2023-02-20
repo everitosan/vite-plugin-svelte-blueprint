@@ -28,4 +28,4 @@ function ViteSvelteBlueprint(opts=utils.defaultOptions) {
   }
 }
 
-module.export = ViteSvelteBlueprint
+module.exports = ViteSvelteBlueprint
